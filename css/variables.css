@@ -1,0 +1,16 @@
+:root {
+  /* Default (Light Mode) */
+  --brand-primary: #0768ac;
+  --brand-secondary: #03c180;
+  --bg_default: #ffffff;
+  --bg_body: #f0f9ff;
+  --lines-color: #dddddd;
+  --body-text: #333333;
+  --heart-color: #dc143c;
+
+  /* Dark Mode */
+  --bg_default-dark: #1a1a1a;
+  --bg_body-dark: #282828;
+  --lines-color-dark: #000000;
+  --body-text-dark: #ededed;
+}
