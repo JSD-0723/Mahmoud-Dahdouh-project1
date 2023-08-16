@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Link CSS Files -->
     <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/framework.css" />
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Link ionicons -->
@@ -26,5 +27,87 @@
 
     <title>Web Topics</title>
   </head>
-  <body></body>
+  <body>
+    <!-- header -->
+    <header class="header flex align-center">
+      <div class="container flex justify-between align-center flex-1">
+        <div class="header__title">
+          <h1 class="title">Web Topics</h1>
+        </div>
+        <div class="header__menu flex justify-between align-center gap-1">
+          <button class="btn btn-icon">
+            <ion-icon name="moon-outline"></ion-icon>
+            <span>dark mode</span>
+          </button>
+          <button class="btn btn-icon">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span>favorite</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- hero -->
+    <header class="hero relative pb-1">
+      <div class="triangle-shape z-2"></div>
+      <div class="triangle-shape triangle-shape-rev"></div>
+      <div class="hero__content flex justify-center">
+        <div>
+          <h2 class="color-secondary bold">Welcome to our website!</h2>
+          <p>We have a new design that's fresh, modern, and easy to use.</p>
+        </div>
+      </div>
+    </header>
+    <!-- search -->
+    <main class="main bg-body pt-1-5 pb-1-5">
+      <section class="search">
+        <div class="container">
+          <div
+            class="flex gap-4 border rounded shadow bg-default overflow-hidden pi-1"
+          >
+            <!-- Search -->
+            <div
+              class="search-input flex-1 flex align-center gap-1 bg-default py--5"
+            >
+              <ion-icon name="search-outline"></ion-icon>
+              <input
+                class="input-text"
+                type="text"
+                placeholder="Search the website..."
+              />
+            </div>
+            <div class="v-line"></div>
+
+            <!-- Sort by -->
+            <div class="sort flex flex-col py--5">
+              <label for="sort-by">Sort by:</label>
+              <select name="sort-by" id="sort-by">
+                <option value="default">Default</option>
+              </select>
+            </div>
+            <div class="v-line"></div>
+            <!-- Filter by -->
+            <div class="filter flex flex-col py--5">
+              <label for="filter-by">Filter by:</label>
+              <select name="filter-by" id="filter-by">
+                <option value="default">Default</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- courses -->
+      <section class="courses">
+        <div class="container">
+          <h2 class="courses__title">"24" Web Topics Found</h2>
+          <div class="courses__results">
+            <div class="course-item">this is course item</div>
+            <div class="course-item">this is course item</div>
+            <div class="course-item">this is course item</div>
+            <div class="course-item">this is course item</div>
+            <div class="course-item">this is course item</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

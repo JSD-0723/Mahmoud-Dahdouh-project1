@@ -1,6 +1,51 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Nunito Sans", sans-serif;
+.header {
+  min-height: var(--top-header-height);
+}
+
+.header__title .title {
+  font-size: 1rem;
+  color: var(--brand-primary);
+}
+
+/* hero */
+.hero__content > div {
+  margin-top: 58px;
+}
+.triangle-shape {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  clip-path: polygon(0 0, 0 100%, 85% 0);
+  background: linear-gradient(
+    90deg,
+    var(--brand-primary) 30%,
+    var(--brand-secondary)
+  );
+}
+.triangle-shape-rev {
+  clip-path: polygon(15% 0, 100% 100%, 100% 0);
+  background: linear-gradient(
+    275deg,
+    var(--brand-secondary) 30%,
+    var(--brand-primary)
+  );
+}
+
+/* Courses */
+.courses__results {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--course-card-width), 1fr)
+  );
+  gap: 24px;
+}
+.courses__title {
+  padding: 24px 0 36px;
+}
+.course-item {
+  padding: 24px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  border-radius: 8px;
+  background: white;
 }

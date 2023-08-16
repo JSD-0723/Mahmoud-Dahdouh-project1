@@ -13,4 +13,8 @@
   --bg_body-dark: #282828;
   --lines-color-dark: #000000;
   --body-text-dark: #ededed;
+
+  /* Sizes */
+  --top-header-height: 70px;
+  --course-card-width: 240px;
 }
