@@ -87,6 +87,17 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+
+/* margin */
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mt--5 {
+  margin-top: 0.5rem;
+}
 /* Gap */
 .gap-1 {
   gap: 0.25rem;
@@ -114,12 +125,18 @@
 .color-body-text {
   color: var(--body-text);
 }
+.color-dark-yellow {
+  color: var(--dark-yellow);
+}
 /* Background */
 .bg-default {
   background-color: var(--bg_default);
 }
 .bg-body {
   background-color: var(--bg_body);
+}
+.bg-dark-yellow {
+  background-color: var(--dark-yellow);
 }
 /* Font */
 .bold {
