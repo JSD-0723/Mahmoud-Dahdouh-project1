@@ -37,11 +37,11 @@
         <div class="header__menu flex justify-between align-center gap-1">
           <button class="btn btn-icon">
             <ion-icon name="moon-outline"></ion-icon>
-            <span>dark mode</span>
+            <span class="hidden sm-visible">dark mode</span>
           </button>
           <button class="btn btn-icon">
             <ion-icon name="heart-outline"></ion-icon>
-            <span>favorite</span>
+            <span class="hidden sm-visible">favorite</span>
           </button>
         </div>
       </div>
@@ -51,7 +51,7 @@
       <div class="triangle-shape z-2"></div>
       <div class="triangle-shape triangle-shape-rev"></div>
       <div class="hero__content flex justify-center">
-        <div>
+        <div class="container">
           <h2 class="color-secondary bold">Welcome to our website!</h2>
           <p>We have a new design that's fresh, modern, and easy to use.</p>
         </div>
@@ -62,11 +62,11 @@
       <section class="search">
         <div class="container">
           <div
-            class="flex gap-4 border rounded shadow bg-default overflow-hidden pi-1"
+            class="flex flex-col md-flex-row border rounded shadow bg-default overflow-hidden"
           >
             <!-- Search -->
             <div
-              class="search-input flex-1 flex align-center gap-1 bg-default py--5"
+              class="search-input flex-1 flex align-center gap-1 bg-default py--5 pi-1"
             >
               <ion-icon name="search-outline"></ion-icon>
               <input
@@ -75,22 +75,24 @@
                 placeholder="Search the website..."
               />
             </div>
+            <div class="h-line md-hidden"></div>
             <div class="v-line"></div>
-
-            <!-- Sort by -->
-            <div class="sort flex flex-col py--5">
-              <label for="sort-by">Sort by:</label>
-              <select name="sort-by" id="sort-by">
-                <option value="default">Default</option>
-              </select>
-            </div>
-            <div class="v-line"></div>
-            <!-- Filter by -->
-            <div class="filter flex flex-col py--5">
-              <label for="filter-by">Filter by:</label>
-              <select name="filter-by" id="filter-by">
-                <option value="default">Default</option>
-              </select>
+            <div class="flex">
+              <!-- Sort by -->
+              <div class="sort flex-1 flex flex-col py--5 pi-1">
+                <label for="sort-by">Sort by:</label>
+                <select name="sort-by" id="sort-by">
+                  <option value="default">Default</option>
+                </select>
+              </div>
+              <div class="v-line mi-1"></div>
+              <!-- Filter by -->
+              <div class="filter flex-1 flex flex-col py--5 pi-1">
+                <label for="filter-by">Filter by:</label>
+                <select name="filter-by" id="filter-by">
+                  <option value="default">Default</option>
+                </select>
+              </div>
             </div>
           </div>
         </div>
@@ -243,6 +245,8 @@
           </div>
         </div>
       </section>
+      <!-- footer -->
+      <footer>Developed with ❤️ &copy; 2023</footer>
     </main>
   </body>
 </html>
