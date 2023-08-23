@@ -40,7 +40,7 @@
             <ion-icon name="moon-outline"></ion-icon>
             <span class="hidden sm-visible">dark mode</span>
           </button>
-          <button class="btn btn-icon">
+          <button class="btn btn-icon" id="show-favorite">
             <ion-icon name="heart-outline"></ion-icon>
             <span class="hidden sm-visible">favorite</span>
           </button>
@@ -169,5 +169,48 @@
       Developed with
       <ion-icon name="heart" class="color-heart fs-24"></ion-icon> &copy; 2023
     </footer>
+    <!-- favorite section -->
+    <section class="favorite" id="favorite-section">
+      <div class="favorite__list">
+        <article class="fav-item shadow">
+          <img
+            src="imgs/logos/docker.png"
+            alt="docker"
+            class="fav-img img-fluid"
+            draggable="false"
+          />
+          <div class="fav-item__body">
+            <h3 class="title truncate">Docker</h3>
+            <div class="stars-rate color-dark-yellow">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+          </div>
+        </article>
+        <article class="fav-item shadow">
+          <img
+            src="imgs/logos/docker.png"
+            alt="docker"
+            class="fav-img img-fluid"
+            draggable="false"
+          />
+          <div class="fav-item__body">
+            <h3 class="title truncate">Docker</h3>
+            <div class="stars-rate color-dark-yellow">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Link JS Files -->
+    <script src="js/main.js"></script>
   </body>
 </html>
