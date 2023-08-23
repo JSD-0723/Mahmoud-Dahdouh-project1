@@ -65,6 +65,9 @@ ul {
 .absolute {
   position: absolute;
 }
+.b-0 {
+  bottom: 0% !important;
+}
 .z-1 {
   z-index: 1;
 }
