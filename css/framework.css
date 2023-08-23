@@ -348,6 +348,13 @@ select {
   grid-column: span 12;
 }
 
+.order-1 {
+  order: 1;
+}
+.order-2 {
+  order: 2;
+}
+
 .max-w-sm {
   max-width: 640px;
 }
@@ -406,6 +413,12 @@ select {
   .col-sm-12 {
     grid-column: span 12;
   }
+  .sm-order-1 {
+    order: 1;
+  }
+  .sm-order-2 {
+    order: 2;
+  }
 }
 /* Medium - MD */
 @media (min-width: 768px) {
@@ -454,6 +467,12 @@ select {
   }
   .col-md-12 {
     grid-column: span 12;
+  }
+  .md-order-1 {
+    order: 1;
+  }
+  .md-order-2 {
+    order: 2;
   }
 }
 /* Large - LG */
