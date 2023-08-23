@@ -45,7 +45,6 @@
 }
 .course-item {
   box-shadow: var(--shadow);
-  border: 1px solid var(--lines-color, gray);
   border-radius: 8px;
   background: white;
   overflow: hidden;
@@ -68,14 +67,10 @@
 .course-item__content .author {
   font-size: 14px;
   color: var(--body-text);
-}
-.course-item__content .title {
   font-weight: normal;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
-.course-item__content .category {
+
+.course-item__content .title {
   margin-bottom: 24px;
   font-size: 14px;
   font-weight: bold;
@@ -94,4 +89,29 @@
 footer {
   padding: 36px 0;
   text-align: center;
+}
+
+/********************************* Details page *********************************/
+.details-header__side-card .card-body {
+  padding: 24px 16px;
+}
+.details-header__side-card .bottom-box {
+  margin-top: 8px;
+  padding: 16px;
+}
+.btn-fav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  background-color: var(--brand-secondary);
+  color: var(--bg_body);
+  border: none;
+  border-radius: 0px;
+}
+.details-content__list > li {
+  border-top: 1px solid var(--lines-color);
 }

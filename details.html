@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details</title>
+
+    <!-- Link CSS Files -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Link ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-body">
+    <!-- header -->
+    <header class="header flex align-center">
+      <div class="container flex justify-between align-center flex-1">
+        <div class="header__title">
+          <h1 class="title">Web Topics</h1>
+        </div>
+        <div class="header__menu flex justify-between align-center gap-1">
+          <button class="btn btn-icon">
+            <ion-icon name="moon-outline"></ion-icon>
+            <span class="hidden sm-visible">dark mode</span>
+          </button>
+          <button class="btn btn-icon">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="hidden sm-visible">favorite</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- hero -->
+    <header class="hero relative pb-1">
+      <div class="triangle-shape z-2"></div>
+      <div class="triangle-shape triangle-shape-rev"></div>
+      <div class="hero__content flex justify-center">
+        <div class="container">
+          <h2 class="color-secondary bold">Welcome to our website!</h2>
+          <p>We have a new design that's fresh, modern, and easy to use.</p>
+        </div>
+      </div>
+    </header>
+    <main class="flex-1">
+      <section class="details-header bg-body-text">
+        <div class="container grid grid-cols-12 gap-4 py-2 max-w-lg">
+          <div class="details-header__content col-12 col-md-8">
+            <h3 class="color-secondary fs-16">Web Development languages</h3>
+            <h4 class="color-white fs-24">HTML</h4>
+            <div class="stars-rate color-dark-yellow">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-half"></ion-icon>
+            </div>
+            <p class="color-white mt-1">
+              HTML (Hypertext Markup Language) is the standard markup language
+              for creating web pages and other information that can be displayed
+              in a web browser. It provides a structure for content and defines
+              how it should be displayed on a web page, including text, images,
+              and multimedia. HTML is essential for creating static web pages
+              and is a foundational technology for the World Wide Web
+            </p>
+          </div>
+          <div class="details-header__side-card relative col-12 col-md-4">
+            <div class="md-absolute bg-body shadow flex flex-col p-px">
+              <img
+                draggable="false"
+                src="imgs/logos/javascript.jpg"
+                class="img-fluid"
+                alt="topic image"
+              />
+              <div class="card-body">
+                <p class="title">
+                  <span class="bold">HTML</span> by
+                  <a href="#" class="color-primary">Sarah Smith</a>
+                </p>
+                <div class="bottom-box border">
+                  <p>Interested about this topic?</p>
+                  <button class="btn-fav">
+                    Add to Favourites
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+                  <p class="fs-14 gray-text text-center">unlimited credits</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="details-content mt-2">
+        <div class="container max-w-lg grid grid-cols-12">
+          <div class="col-12 col-md-8 border rounded bg-default">
+            <h3 class="details-content__title fs-24 py-1 px-1-5 bold">
+              HTML Sub Topics
+            </h3>
+            <ul class="details-content__list">
+              <li class="fs-16 py-1 px-1-5 flex align-center gap-2">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="color-secondary fs-20"
+                ></ion-icon
+                >HTML syntax and structure
+              </li>
+              <li class="fs-16 py-1 px-1-5 flex align-center gap-2">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="color-secondary fs-20"
+                ></ion-icon
+                >HTML elements and attributes
+              </li>
+              <li class="fs-16 py-1 px-1-5 flex align-center gap-2">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="color-secondary fs-20"
+                ></ion-icon
+                >HTML forms and input elements
+              </li>
+              <li class="fs-16 py-1 px-1-5 flex align-center gap-2">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="color-secondary fs-20"
+                ></ion-icon
+                >HTML tables and lists
+              </li>
+              <li class="fs-16 py-1 px-1-5 flex align-center gap-2">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="color-secondary fs-20"
+                ></ion-icon
+                >HTML multimedia elements (audio, video, images)
+              </li>
+              <li class="fs-16 py-1 px-1-5 flex align-center gap-2">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="color-secondary fs-20"
+                ></ion-icon
+                >HTML accessibility and semantic markup
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="flex justify-center align-center gap-1">
+      Developed with
+      <ion-icon name="heart" class="color-heart fs-24"></ion-icon> &copy; 2023
+    </footer>
+  </body>
+</html>
